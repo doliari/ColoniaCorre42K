@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="/style.css">
+        <link rel="stylesheet" type="text/css" href="./style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         
         <title>Maratón de Colonia</title>
@@ -14,7 +14,6 @@
         <header>
             <nav class="navbar navbar-expand-lg bg-light">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><img src="imagenes/logoColoniaCorre.jpg" width="35%" height="35%">---> 42.195 Km</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -50,14 +49,101 @@
         </header>
 
         <main>
-          <h1>MARATÓN INTERNACIONAL DE COLONIA</h1>
+          <div class="tituloIndex">
+            <h1>MARATÓN INTERNACIONAL DE COLONIA</h1>
+          </div>
+          <div class="imagenIndex">
+            <a href="#"><img src="imagenes/logoColoniaCorre.jpg"></a>
+          </div>
 
+          <div class="formularioInscripcion">
+            <h2>Formulario de Inscripción</h2>
+            <form id="formulario">
+              <p>Nombre: <input type="text" placeholder="Nombre y Apellido"></p>
+              <p>Año de nacimiento: <input type="number" placeholder="Año"></p>
+              <p>Nacionalidad: <input type="text" placeholder="Nacionalidad"></p>
+              <p>Documento: <input type="number" placeholder="Solo numeros"></p>
+              <p>Email: <input type="email" placeholder="nombre@mail.com"></p>
+              <p>Teléfono: <input type="number" placeholder="123456789"></p>
+              <p>Genero: 
+                <input type="radio" name="hm" value="h" required> Hombre
+                <input type="radio" name="hm" value="m" required> Mujer
+              </p>
+              <p>Distancia: 
+                <input type="radio" name="hm" value="h" required> 5 Km
+                <input type="radio" name="hm" value="m" required> 10 Km
+                <input type="radio" name="hm" value="h" required> 21 Km
+                <input type="radio" name="hm" value="m" required> 42 Km
+              </p>
+              <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+        <div class="carouselIndex">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./imagenes/colonia/imagenUno.jpg" class="d-block w-50" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/colonia/imagenDos.jpg" class="d-block w-50" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/colonia/imagenTres.jpg" class="d-block w-50" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/colonia/imagenCuatro.jpg" class="d-block w-50" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/colonia/imagenCinco.jpg" class="d-block w-50" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
         </main>
 
-        <footer>
+        
+        <footer class="site-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <h6>Corre!</h6>
+                <p class="text-justify">Quien compite con los demás es ganador, pero quien compite consigo mismo es poderoso. Correr es una forma de decirle al cuerpo que lo quiero. La independencia es la característica sobresaliente del corredor. Correr es una de las mejores soluciones para aclarar la mente.</p>
+              </div>
+    
 
-        </footer>
-
+    
+              <div class="col-xs-6 col-md-3">
+                <h6>Links</h6>
+                <ul class="footer-links">
+                  <li><a href="https://www.runnersworld.com/" target="blank ">Runners World</a></li>
+                  <li><a href="https://www.worldmarathonmajors.com/" target="blank ">Majors</a></li>
+                  <li><a href="https://atletas.uy/" target="blank ">AAU</a></li>
+                  <li><a href="https://runfit.com.uy/" target="blank ">Run Fit</a></li>
+                  <li><a href="https://www.sucaweb.com/" target="blank ">Suca Sports</a></li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-sm-6 col-xs-12">
+                <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+             <a href="#">Maratón Colonia</a>.
+                </p>
+              </div>
+    
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <ul class="social-icons">
+                  <li><a class="facebook" href="https://es-la.facebook.com/" target="blank "><i class="fa fa-facebook"></i>F</a></li>
+                  <li><a class="twitter" href="https://twitter.com/?lang=es" target="blank "><i class="fa fa-twitter"></i>T</a></li>
+                  <li><a class="linkedin" href="https://es-la.facebook.com/" target="blank "><i class="fa fa-linkedin">Li</i></a></li>   
+                </ul>
+              </div>
+            </div>
+          </div>
+    </footer>
 
         <script src="./main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

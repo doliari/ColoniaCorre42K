@@ -1,4 +1,4 @@
-
+/* 
 let anioNacimiento = parseInt (prompt ("Bienvenido a la inscripción de la Maratón de Colonia. Ingresa tu año de nacimiento"));
 
 while (anioNacimiento >= 2022) {
@@ -106,4 +106,4 @@ const participantesInscriptos21K = participantesInscriptos.filter ((inscripto) =
 console.log (participantesInscriptos21K);
 
 const participantesInscriptos42K = participantesInscriptos.filter ((inscripto) => inscripto.distancia == 42);
-console.log (participantesInscriptos42K);
+console.log (participantesInscriptos42K); */
