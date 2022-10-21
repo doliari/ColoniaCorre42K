@@ -1,109 +1,121 @@
-/* 
-let anioNacimiento = parseInt (prompt ("Bienvenido a la inscripción de la Maratón de Colonia. Ingresa tu año de nacimiento"));
 
-while (anioNacimiento >= 2022) {
-    alert ("El año ingresado no es correcto.");
-    anioNacimiento = parseInt (prompt ("Ingresa tu año de nacimiento"));
-}
+// Declaración de variables
 
-// Asignación de categoría
+let nombre = " ";
+let nacionalidad = " ";
+let documento = 0;
+let anioNacimiento = 0;
+let email = " ";
+let telefono = 0;
+let genero = " ";
+let distancia = 0;
 let categoria = " ";
-if (anioNacimiento < 2022 && anioNacimiento >= 2010) {
-    categoria = "NIÑOS";
-    console.log ("La categoría elegida es: " + categoria);
-} else if (anioNacimiento < 2010 && anioNacimiento >= 2004) {
-    categoria = "ADOLESCENTES";
-    console.log ("La categoría elegida es: " + categoria);
-} else if (anioNacimiento < 2004 && anioNacimiento >= 1992) {
-    categoria = "19 A 30 AÑOS";
-    console.log ("La categoría elegida es: " + categoria);
-} else if (anioNacimiento < 1992 && anioNacimiento >= 1972) {
-    categoria = "31 A 50 AÑOS";
-    console.log ("La categoría elegida es: " + categoria);
-} else {
-    categoria = "MAYORES A 50 AÑOS";
-    console.log ("La categoría elegida es: " + categoria);
-}
 
-// Asignación de distancia seleccionada
-let distanciaCarrera = parseInt (prompt ("Seleccione la distancia que desea correr (5K, 10K, 21K o 42K)"));
 
-while (distanciaCarrera != 5 && distanciaCarrera != 10 && distanciaCarrera != 21 && distanciaCarrera != 42) {
-    alert ("La distancia seleccionada no es correcta");
-    distanciaCarrera = parseInt (prompt ("Seleccione la distancia que desea correr (5K, 10K, 21K o 42K)"));
-}
-    switch (distanciaCarrera) {
-        case 5:
-            console.log ("La distancia seleccionada es: " + distanciaCarrera + "Km");
-            break;
-        case 10:
-            console.log ("La distancia seleccionada es: " + distanciaCarrera + "Km")
-            break;
-        case 21:
-            console.log ("La distancia seleccionada es: " + distanciaCarrera + "Km")
-            break;
-        case 42:
-            console.log ("La distancia seleccionada es: " + distanciaCarrera + "Km")
-            break;
-    }
-
-// Función para ingreso de nombre del participante
-let nombreIngresado = " ";
-function solicitarNombre () {
-	nombreIngresado = prompt ("Ingresar nombre y apellido");
-    console.log ("El nombre del participante es: " + nombreIngresado);
-}
-
-solicitarNombre ()
-
-// Objeto Participante
-
-function Participante (nombre, categoria, distancia) {
+// Constructor Participante
+function Participante (nombre, nacionalidad, documento, anioNacimiento, categoria, email, telefono, genero, distancia) {
     this.nombre = nombre.toUpperCase();
+    this.nacionalidad = nacionalidad;
+    this.documento = documento;
+    this.anioNacimiento = anioNacimiento;
     this.categoria = categoria;
+    this.email = email;
+    this.telefono = telefono;
+    this.genero = genero;
     this.distancia = distancia;
 }
 
-const participanteNuevo = new Participante(nombreIngresado, categoria, distanciaCarrera);
+// Declaración de participante
+let participante = new Participante(nombre, nacionalidad, documento, anioNacimiento, categoria, email, telefono, genero, distancia);
+// Declaración de participante en JSON
+let participanteEnJSON = JSON.stringify(participante);
 
-console.log (participanteNuevo);
+// Declaración de algunos participantes
+const participante1 = new Participante("Fernando Cabrera", "Uruguayo", 42561355, 1979, "31 A 50 AÑOS", "fcabrera@gmail.com", 099123456, "h", 10);
+const participante2 = new Participante("Maria Fernandez", "Uruguayo", 39167524, 1993, "19 A 30 AÑOS", "mfernandez@gmail.com", 099321654, "m", 42);
+const participante3 = new Participante("Mario Carrero", "Uruguayo", 18569435, 1959, "MAYORES A 50 AÑOS", "mcarrero@gmail.com", 091564876, "h",5);
+const participante4 = new Participante("Ana Prada", "Uruguayo", 49861568, 2001, "ADOLESCENTES", "aprada@gmail.com", 098684524, "m", 21);
 
-const participante1 = new Participante("Fernando Cabrera", "31 A 50 AÑOS", 10);
-const participante2 = new Participante("Maria Fernandez", "19 A 30 AÑOS", 42);
-const participante3 = new Participante("Mario Carrero", "MAYORES A 50 AÑOS", 5);
-const participante4 = new Participante("Ana Prada", "ADOLESCENTES", 21);
-const participante5 = new Participante("Eduardo Mateo", "NIÑOS", 5);
+// Array de participantes inscriptos
+const participantesInscriptos = [participante1, participante2, participante3, participante4];
 
-const participantesInscriptos = [participante1, participante2, participante3, participante4, participante5];
+let miFormulario = document.getElementById ("formulario");
+miFormulario.addEventListener("submit", validarFormulario);
 
-console.log (participantesInscriptos);
-
-let estaInscripto = false;
-for (let i = 0; i < participantesInscriptos.length; i++) {
-    if (participanteNuevo.nombre == participantesInscriptos[i].nombre && participanteNuevo.categoria == participantesInscriptos[i].categoria &&participanteNuevo.distancia == participantesInscriptos[i].distancia) {
-        estaInscripto = true;
-        break;
+function validarFormulario(e) {
+    e.preventDefault();
+    let formulario = e.target;
+    let nombre = formulario.nombre.value;
+    let nacionalidad = formulario.nacionalidad.value;
+    let documento = parseInt (formulario.documento.value);
+    let anioNacimiento = parseInt (formulario.nacimiento.value);
+    let email = formulario.email.value;
+    let telefono = parseInt (formulario.telefono.value);
+    let genero = formulario.genero.value;
+    let distancia = parseInt (formulario.distancia.value);
+    if (anioNacimiento >= 2022) {
+        alert ("El año ingresado no es correcto.");
+    } else {
+        if (anioNacimiento < 2022 && anioNacimiento >= 2010) {
+            categoria = "NIÑOS";
+        } else if (anioNacimiento < 2010 && anioNacimiento >= 2004) {
+            categoria = "ADOLESCENTES";
+        } else if (anioNacimiento < 2004 && anioNacimiento >= 1992) {
+            categoria = "19 A 30 AÑOS";
+        } else if (anioNacimiento < 1992 && anioNacimiento >= 1972) {
+            categoria = "31 A 50 AÑOS";
+        } else {
+            categoria = "MAYORES A 50 AÑOS";
+        }
     }
+
+    let participante = new Participante(nombre, nacionalidad, documento, anioNacimiento, categoria, email, telefono, genero, distancia);
+
+    console.log (participante);
+
+    let participanteEnJSON = JSON.stringify(participante);
+
+    // Almacenado de participante en local storage
+    localStorage.setItem ("participante", participanteEnJSON);   
+    
+    const participanteNuevo = JSON.parse(participanteEnJSON);
+
+    // Verificación de participante inscripto por numero de documento
+    let estaInscripto = false;
+    for (let i = 0; i < participantesInscriptos.length; i++) {
+        if (participanteNuevo.documento == participantesInscriptos[i].documento) {
+            estaInscripto = true;
+            break;
+        }
+    }
+
+    if (estaInscripto == false) {
+        participantesInscriptos.push(participanteNuevo);
+    } else {
+        alert("El participante ya se encuentra inscripto");
+    }
+
+    console.log (participantesInscriptos);
+
+    const participantesInscriptos5K = participantesInscriptos.filter ((inscripto) => inscripto.distancia == 5);
+    console.log ("Participantes inscriptos en 5K");
+    console.log (participantesInscriptos5K);
+
+    const participantesInscriptos10K = participantesInscriptos.filter ((inscripto) => inscripto.distancia == 10);
+    console.log ("Participantes inscriptos en 10K");
+    console.log (participantesInscriptos10K);
+
+    const participantesInscriptos21K = participantesInscriptos.filter ((inscripto) => inscripto.distancia == 21);
+    console.log ("Participantes inscriptos en 21K");
+    console.log (participantesInscriptos21K);
+
+    const participantesInscriptos42K = participantesInscriptos.filter ((inscripto) => inscripto.distancia == 42);
+    console.log ("Participantes inscriptos en 42K");
+    console.log (participantesInscriptos42K);
 }
 
-if (estaInscripto == false) {
-    participantesInscriptos.push(participanteNuevo)
-} else {
-    alert("El participante ya se encuentra inscripto");
-}
 
-console.log (participantesInscriptos);
 
-// Aplicación de filtros
 
-const participantesInscriptos5K = participantesInscriptos.filter ((inscripto) => inscripto.distancia == 5);
-console.log (participantesInscriptos5K);
 
-const participantesInscriptos10K = participantesInscriptos.filter ((inscripto) => inscripto.distancia == 10);
-console.log (participantesInscriptos10K);
 
-const participantesInscriptos21K = participantesInscriptos.filter ((inscripto) => inscripto.distancia == 21);
-console.log (participantesInscriptos21K);
-
-const participantesInscriptos42K = participantesInscriptos.filter ((inscripto) => inscripto.distancia == 42);
-console.log (participantesInscriptos42K); */

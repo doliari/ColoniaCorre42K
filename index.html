@@ -50,34 +50,74 @@
 
         <main>
           <div class="tituloIndex">
-            <h1>MARATÓN INTERNACIONAL DE COLONIA</h1>
+            <!-- <h1>MARATÓN INTERNACIONAL DE COLONIA</h1> -->
           </div>
           <div class="imagenIndex">
-            <a href="#"><img src="imagenes/logoColoniaCorre.jpg"></a>
+            <a href="#"><img src="imagenes/logoMaratonColonia.jpg"></a>
           </div>
 
           <div class="formularioInscripcion">
             <h2>Formulario de Inscripción</h2>
-            <form id="formulario">
-              <p>Nombre: <input type="text" placeholder="Nombre y Apellido"></p>
-              <p>Año de nacimiento: <input type="number" placeholder="Año"></p>
-              <p>Nacionalidad: <input type="text" placeholder="Nacionalidad"></p>
-              <p>Documento: <input type="number" placeholder="Solo numeros"></p>
-              <p>Email: <input type="email" placeholder="nombre@mail.com"></p>
-              <p>Teléfono: <input type="number" placeholder="123456789"></p>
-              <p>Genero: 
-                <input type="radio" name="hm" value="h" required> Hombre
-                <input type="radio" name="hm" value="m" required> Mujer
-              </p>
-              <p>Distancia: 
-                <input type="radio" name="hm" value="h" required> 5 Km
-                <input type="radio" name="hm" value="m" required> 10 Km
-                <input type="radio" name="hm" value="h" required> 21 Km
-                <input type="radio" name="hm" value="m" required> 42 Km
-              </p>
+            <form id="formulario"></form>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                <input name="nombre" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Juan Perez">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput2" class="form-label">Nacionalidad</label>
+                <input name="nacionalidad" type="text" class="form-control" id="exampleFormControlInput2" placeholder="Uruguayo">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput3" class="form-label">Documento</label>
+                <input name="documento" type="number" class="form-control" id="exampleFormControlInput3" placeholder="12345678">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput4" class="form-label">Año de nacimiento</label>
+                <input name="nacimiento" type="number" class="form-control" id="exampleFormControlInput4" placeholder="1985">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput5" class="form-label">Email</label>
+                <input name="email" type="email" class="form-control" id="exampleFormControlInput5" placeholder="nombre@ejemplo.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput6" class="form-label">Teléfono</label>
+                <input name="telefono" type="number" class="form-control" id="exampleFormControlInput6" placeholder="099123456">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput7" class="form-label">Genero</label>
+                <input name="genero" type="radio"  id="exampleFormControlInput7" value="h" required> Hombre
+                <input name="genero" type="radio"  id="exampleFormControlInput7" value="m" required> Mujer
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput8" class="form-label">Distancia</label>
+                <input name="distancia" type="radio" id="exampleFormControlInput8" value=5 required> 5 Km
+                <input name="distancia" type="radio" id="exampleFormControlInput8" value=10 required> 10 Km
+                <input name="distancia" type="radio" id="exampleFormControlInput8" value=21 required> 21 Km
+                <input name="distancia" type="radio" id="exampleFormControlInput8" value=42 required> 42 Km
+              </div>
               <input type="submit" value="Enviar">
             </form>
-        </div>
+          </div>
+           <!--  <form id="formulario">
+              <p>Nombre:            <input name="nombre" type="text" placeholder="Nombre y Apellido"></p>
+              <p>Nacionalidad:      <input name="nacionalidad" type="text" placeholder="Nacionalidad"></p>
+              <p>Documento:         <input name="documento" type="number" placeholder="Solo numeros"></p>
+              <p>Año de nacimiento: <input name="nacimiento" type="number" placeholder="Año"></p>
+              <p>Email:             <input name="email" type="email" placeholder="nombre@mail.com"></p>
+              <p>Teléfono:          <input name="telefono" type="number" placeholder="123456789"></p>
+              <p>Genero: 
+                <input name="genero" type="radio" value="h" required> Hombre
+                <input name="genero" type="radio" value="m" required> Mujer
+              </p>
+              <p>Distancia: 
+                <input name="distancia" type="radio" value=5 required> 5 Km
+                <input name="distancia" type="radio" value=10 required> 10 Km
+                <input name="distancia" type="radio" value=21 required> 21 Km
+                <input name="distancia" type="radio" value=42 required> 42 Km
+              </p>
+              <input type="submit" value="Enviar">
+            </form> 
+        </div>-->
 
         <div class="carouselIndex">
           <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
