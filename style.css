@@ -175,3 +175,20 @@
 {
   background-color:#ea4c89
 }
+
+.iconoRedes {
+   width: 60%;
+}
+
+.calendarioCarreras {
+   margin: 1%;
+}
+
+.carrerasCategorias {
+   margin: 1%;
+}
+
+.resultadosCarreras {
+   text-align: center;
+   margin-bottom: 5%;
+}

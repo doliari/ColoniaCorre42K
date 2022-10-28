@@ -112,6 +112,8 @@ function validarFormulario(e) {
     const participantesInscriptos42K = participantesInscriptos.filter ((inscripto) => inscripto.distancia == 42);
     console.log ("Participantes inscriptos en 42K");
     console.log (participantesInscriptos42K);
+
+    miFormulario.reset();
 }
 
 

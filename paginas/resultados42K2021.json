@@ -1,0 +1,13 @@
+[
+    {"posicion": "1", "nombre": "Roberto Castro", "tiempo": "02:15:25", "id": 1},
+    {"posicion": "2", "nombre": "Enzo Menedez", "tiempo": "02:20:50", "id": 2},
+    {"posicion": "3", "nombre": "Martin Perez", "tiempo": "02:25:15", "id": 3},
+    {"posicion": "4", "nombre": "Mariana Alonso", "tiempo": "02:30:40", "id": 4},
+    {"posicion": "5", "nombre": "Juan Rodriguez", "tiempo": "02:35:45", "id": 5},
+    {"posicion": "6", "nombre": "Carlos Rubio", "tiempo": "02:45:19", "id": 6},
+    {"posicion": "7", "nombre": "Jimena Salgueiro", "tiempo": "02:58:35", "id": 7},
+    {"posicion": "8", "nombre": "Horacio Elizondo", "tiempo": "03:08:25", "id": 8},
+    {"posicion": "9", "nombre": "Adriana Ortigoza", "tiempo": "03:15:45", "id": 9},
+    {"posicion": "10", "nombre": "Osvaldo Principi", "tiempo": "03:25:55", "id": 10}
+    
+]
