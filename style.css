@@ -1,16 +1,20 @@
 *{ margin: 0;
    padding: 0;}
 
-.tituloIndex{
-   color: rgb(68, 61, 61);
-   text-align: center;
-   font-family: 'Courier New', Courier, monospace;
-   font-weight: bold;
-   margin-top: 1%;
+
+.fechaCarrera {
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(72, 201, 197);
+  border-radius: 2%;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 .imagenIndex {
-   background-color: rgb(238, 244, 244);
+   background-color: white;
 }
 
 .imagenIndex img {
@@ -33,18 +37,19 @@
    text-align: center;
 }
 .carouselIndex {
-   margin-left: 30%;
+   margin-left: 35%;
    margin-top: 2%;
    margin-bottom: 2%;
 }
 
 .site-footer
 {
-  background-color:#26272b;
+  /* background-color:#26272b; */
+  background-color:#8c8d91;
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
-  color:#737373;
+  color:white;
 }
 .site-footer hr
 {
@@ -65,7 +70,7 @@
 }
 .site-footer a
 {
-  color:#737373;
+  color:white;
 }
 .site-footer a:hover
 {
@@ -83,7 +88,7 @@
 }
 .footer-links a
 {
-  color:#737373
+  color:white
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
@@ -106,7 +111,7 @@
   margin-left:6px;
   margin-right:0;
   border-radius:100%;
-  background-color:#33353d
+  background-color:#8c8d91
 }
 .copyright-text
 {
@@ -128,13 +133,13 @@
 {
   margin-right:15px;
   text-transform:uppercase;
-  color:#96a2b2;
+  color:white;
   font-weight:700;
   font-size:13px
 }
 .social-icons a{
   background-color:#eceeef;
-  color:#818a91;
+  color:white;
   font-size:16px;
   display:inline-block;
   line-height:44px;
@@ -161,20 +166,17 @@
 }
 .social-icons a.facebook:hover
 {
-  background-color:#3b5998
+  background-color:white
 }
 .social-icons a.twitter:hover
 {
-  background-color:#00aced
+  background-color:white
 }
 .social-icons a.linkedin:hover
 {
-  background-color:#007bb6
+  background-color:white
 }
-.social-icons a.dribbble:hover
-{
-  background-color:#ea4c89
-}
+
 
 .iconoRedes {
    width: 60%;
@@ -192,3 +194,12 @@
    text-align: center;
    margin-bottom: 5%;
 }
+
+.resultados {
+  padding: 2%;
+}
+
+@media screen and (max-width: 768px) {
+  .imagenIndex {
+    scale: 40%; } 
+  }
