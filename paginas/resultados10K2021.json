@@ -1,13 +1,13 @@
 [
-    {"posicion": "1", "nombre": "Roberto Castro", "tiempo": "00:31:25", "id": 1},
-    {"posicion": "2", "nombre": "Enzo Menedez", "tiempo": "00:31:50", "id": 2},
-    {"posicion": "3", "nombre": "Martin Perez", "tiempo": "00:32:15", "id": 3},
-    {"posicion": "4", "nombre": "Mariana Alonso", "tiempo": "00:34:40", "id": 4},
-    {"posicion": "5", "nombre": "Juan Rodriguez", "tiempo": "00:35:45", "id": 5},
-    {"posicion": "6", "nombre": "Carlos Rubio", "tiempo": "00:36:19", "id": 6},
-    {"posicion": "7", "nombre": "Jimena Salgueiro", "tiempo": "00:37:35", "id": 7},
-    {"posicion": "8", "nombre": "Horacio Elizondo", "tiempo": "00:38:25", "id": 8},
-    {"posicion": "9", "nombre": "Adriana Ortigoza", "tiempo": "00:39:45", "id": 9},
-    {"posicion": "10", "nombre": "Osvaldo Principi", "tiempo": "00:39:55", "id": 10}
+    {"posicion": "1", "nombre": "Martin Cuesta", "tiempo": "00:31:25", "id": 1},
+    {"posicion": "2", "nombre": "Pablo Olivera", "tiempo": "00:31:50", "id": 2},
+    {"posicion": "3", "nombre": "Santiago Sobrero", "tiempo": "00:32:15", "id": 3},
+    {"posicion": "4", "nombre": "Patricia Soria", "tiempo": "00:34:40", "id": 4},
+    {"posicion": "5", "nombre": "Carlos Castro", "tiempo": "00:35:45", "id": 5},
+    {"posicion": "6", "nombre": "Horacio Perez", "tiempo": "00:36:19", "id": 6},
+    {"posicion": "7", "nombre": "Lucia Strada", "tiempo": "00:37:35", "id": 7},
+    {"posicion": "8", "nombre": "Mariano Olanondo", "tiempo": "00:38:25", "id": 8},
+    {"posicion": "9", "nombre": "Elizabeth Araujo", "tiempo": "00:39:45", "id": 9},
+    {"posicion": "10", "nombre": "Marcelo Medina", "tiempo": "00:39:55", "id": 10}
     
 ]

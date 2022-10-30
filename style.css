@@ -22,6 +22,11 @@
    margin: auto;
 }
 
+.imagenIndex2 img {
+  display: block;
+  margin: auto;
+}
+
 .formularioInscripcion {
    margin-left: 25%;
    margin-top: 2%;
@@ -44,7 +49,6 @@
 
 .site-footer
 {
-  /* background-color:#26272b; */
   background-color:#8c8d91;
   padding:45px 0 20px;
   font-size:15px;
@@ -201,5 +205,11 @@
 
 @media screen and (max-width: 768px) {
   .imagenIndex {
-    scale: 40%; } 
+    display: none; }
+    
   }
+
+  @media screen and (min-width: 769px) {
+    .imagenIndex2 {
+      display: none; } 
+    }
