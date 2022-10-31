@@ -206,7 +206,17 @@
 @media screen and (max-width: 768px) {
   .imagenIndex {
     display: none; }
-    
+
+  .formularioInscripcion {
+      width: 100%;
+      display: block;
+      margin: auto;
+   }
+   
+   .fechaCarrera {
+    display: block;
+    margin: auto;
+   }
   }
 
   @media screen and (min-width: 769px) {
